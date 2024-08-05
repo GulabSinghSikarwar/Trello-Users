@@ -19,7 +19,7 @@ app.use(morganMiddleware);
 // app.use(routes);
 app.use('/',(req,resp)=>{
     resp.status(200).json({
-        status :"success",
+        status :"success user service ",
 
     })
 })
