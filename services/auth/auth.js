@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
 const speakeasy = require('speakeasy');
-const User = require('../models/User');
+const User = require('../../models/Users');
 const  tokenService = require('./token.service');
 const  qrCodeService = require('./qrcode.service');
 const {logger} =require('../logger.service')

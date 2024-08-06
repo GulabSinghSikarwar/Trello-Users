@@ -1,6 +1,6 @@
-const authService = require('../../services/auth.service');
-const { logger } = require('../../services/logger');
-const { updateUser } = require('../../utils/auth.helper');
+const authService = require('../services/auth/auth');
+const { logger } = require('../services/logger.service');
+const { updateUser } = require('../utils/auth.helper');
 
 const register = async (req, res) => {
     const { username, password } = req.body;

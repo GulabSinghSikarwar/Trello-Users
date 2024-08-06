@@ -1,5 +1,5 @@
 const QRCode = require('qrcode');
-const { logger } = require('./logger');
+const { logger } = require('../logger.service');
 
 const generateQRCode = async (secret) => {
     try {

@@ -1,4 +1,5 @@
 const express = require('express');
+const {connectDB} = require('./configs/DB/connection')
 // const session = require('express-session');
 const bodyParser = require('body-parser'); // Import body-parser
 const routes = require('./routes/index.route')
@@ -25,6 +26,6 @@ app.use('/', (req, resp) => {
 
 const PORT = process.env.PORT || 8001;
 app.listen(PORT, () => {
-    // connectDB();
+    connectDB();
     logger.info(`Trello User Service Server running on port ${PORT}`);
 });
