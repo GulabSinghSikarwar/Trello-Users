@@ -5,7 +5,7 @@ router.use('/api/users/auth', authRoute)
 
 router.use('/api/users', (req, resp, next) => {
     resp.json({
-        messages: "sucessfully redirected  to user service "
+        messages: "sucessfully redirected  to user service  Hello  docker 9  "
     })
 })
 
